@@ -1,0 +1,497 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+}
+
+html,
+body {
+  height: 100%;
+  width: 100%;
+}
+
+#main {
+  height: 100%;
+  width: 100%;
+  /* background-color: aqua; */
+  position: relative;
+  padding-top: 1px;
+}
+
+#nav {
+  height: 10vh;
+  width: 100%;
+  /* background-color: chocolate; */
+  margin-top: 10px;
+  border-top: 2px solid black;
+  border-bottom: 2px solid black;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+#nav h1 {
+  /* background-color: cornsilk; */
+  height: 100%;
+  width: 18%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: monument;
+  letter-spacing: -2px;
+  font-size: 44px;
+  position: relative;
+}
+
+#nav h1::after{
+  content: "©";
+  /* windows+"." */
+  font-family: gilroy;
+  font-weight: 400;
+  font-size: 20px;
+  position: absolute;
+  top: 10%;
+  right: 1%;
+}
+#nav h1::before{
+  content: "model management";
+  /* windows+"." */
+  font-family: gilroy;
+  color: #666;
+  font-weight: 400;
+  font-size: 18px;
+  letter-spacing: 0.1px;
+  position: absolute;
+  bottom: 10%;
+  right: 9%;
+}
+#nav h2 {
+  /* background-color: cornsilk; */
+  height: 100%;
+  width: 25%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-right: 2px solid black;
+  font-size: 23px;
+  font-weight: 500;
+}
+
+#nav h2:nth-last-child(1) {
+  width: 12%;
+  /* background-color: blueviolet; */
+}
+
+#centre {
+  height: 90%;
+  width: 100%;
+  /* background-color: blueviolet; */
+  padding: 8vh;
+  position: relative;
+}
+
+#content {
+  height: 100%;
+  width: 100%;
+  position: relative;
+  /* background-color: brown; */
+}
+
+#content video {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+}
+
+#overlay {
+  height: 52%;
+  width: 100%;
+  position: absolute;
+  bottom: 0;
+  /* background-color: darkkhaki; */
+  padding: 2.7vw;
+  color: #fff;
+}
+
+#over1 {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 2vw;
+}
+
+#over1 h1 {
+  font-size: 4vw;
+  /* font-weight: 600 ; */
+}
+#over1 h2 {
+  font-size: 1vw;
+  padding: 2vw 2.2vw;
+  /* background-color: brown; */
+  border-radius: 50%;
+  border: 1px solid #fff;
+  border-bottom: 2px solid #fff;
+}
+#over2 {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-top: 2px solid white;
+  padding: 1.5vw 0;
+}
+
+#over2 h4 {
+  font-size: 1.5vw;
+  font-weight: 500;
+}
+
+#over2 img {
+  height: 3vw;
+}
+
+#scroll {
+  height: 40vh;
+  width: 100%;
+  /* background-color: darksalmon; */
+  white-space: nowrap;
+  overflow-x: hidden;
+  overflow-y: hidden;
+}
+
+#scroll img {
+  /* display: none; */
+  height: 100%;
+  border-radius: 50%;
+  width: 15%;
+  margin: 1vw;
+  object-fit: cover;
+  object-position: 30% 30%;
+}
+
+#container {
+  height: 100%;
+  width: 110%;
+  /* background-color: #be4646; */
+  display: inline-block;
+  padding: 2vw;
+  animation-name: anime;
+  animation-duration: 8s;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+}
+
+@keyframes anime {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(-100%);
+  }
+}
+
+#alphabet {
+  height: 11vh;
+  width: 100%;
+  /* background-color: darkblue; */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1vw;
+  border-top: 2px solid black;
+  border-bottom: 2px solid black;
+}
+
+#alphabet h5 {
+  font-size: 1.8vw;
+  text-transform: uppercase;
+  /* text-decoration: underline; */
+  border-bottom: 2px solid black;
+  font-weight: 400;
+  font-style: italic;
+  letter-spacing: 4px;
+  margin-right: 2vw;
+}
+
+#alphabet h6 {
+  font-size: 1.3vw;
+  text-transform: uppercase;
+  /* background-color: rgb(103, 228, 167); */
+  /* text-decoration: underline; */
+  /* border-bottom: 2px solid black; */
+  font-weight: 400;
+  font-style: italic;
+  letter-spacing: 4px;
+  padding: 0.5vw 0.7vw;
+  border-radius: 50%;
+  cursor: pointer;
+  border: 1px solid #00000000;
+  transition: all ease 0.3s;
+}
+
+#alphabet h6:hover {
+  border: 1px solid #000000;
+}
+
+#page2 {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding:  2vw 5vw;
+}
+
+#page2-part1 {
+  height: 100%;
+  width: 50%;
+  background-image: url(https://plus.unsplash.com/premium_photo-1669824394348-f5cac6eab7d4?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTN8fGdpcmwlMjBwb3Npbmd8ZW58MHx8MHx8fDA%3D);
+  background-size: cover;
+  background-position: center;
+}
+
+
+#page2-part2{
+  height: 100%;
+  width: 47%;
+  
+ 
+}
+
+#page2-part2 img {
+  width: 100%;
+  height: 70%;
+  object-fit: cover;
+}
+#text{
+  height: 100%;
+  width: 100%;
+  display: flex;
+}
+
+#text h6{
+  width: 50%;
+  height: 30%;
+  /* background-color: blue; */
+  font-size: 30px;
+  font-weight: 600;
+}
+
+#text h5{
+  font-size: 20px;
+  padding: 10px;
+  text-align: right;
+  font-weight: 200;
+}
+
+#endline{
+  font-size: 5vh;
+  padding: 0.2vw 4.5vw;
+  
+}
+
+#middle{
+  display: flex;
+}
+#circularlogo img{
+  height: 500px;
+  padding: 5vw 9vw;
+}
+
+#circularlogo p {
+  /* height: 60%;
+  width: 60%; */
+  font-size: 30px;
+  padding: 1vw 4vw;
+}
+
+#photo img{
+ height: 90vh;
+ width: 54vw ;
+
+ object-fit: cover;
+ 
+}
+
+
+#page3{
+  height: 100%;
+  width: 100%;
+  /* background-color: cornflowerblue; */
+  position: relative;
+  padding: 3vw 5vw;
+}
+
+#page3>h1{
+text-align: center;
+font-size: 3vw;
+font-weight: 900;
+text-transform: uppercase;
+margin-bottom: 7vh;
+}
+
+.elem{
+  height: 18vh;
+  width: 100%;
+  /* background-color: darksalmon; */
+  border-bottom: 2px solid black;
+  display: flex;
+  align-items: center;
+  justify-content:space-between;
+  padding: 0 2vw;
+  position: relative;
+}
+
+.elem:nth-last-child(5){
+  border-top: 2px solid black;
+}
+
+.elem img {
+  height: 130px;
+  width: 130px;
+  position: absolute;
+  border-radius: 50%;
+  object-fit: cover;
+  left: 10%;
+  opacity: 0;
+  transition: all ease 0.8s;
+}
+.elem h4{
+  font-size: 1.2vw;
+  text-transform: uppercase;
+  font-weight: 500;
+  width: 6%;
+
+}
+
+.elem .elem-part2{
+  width: 45%;
+}
+
+.elem-part2 h1{
+font-size: 2,7vw;
+font-weight: 500;
+}
+
+.elem-part2 h5{
+  font-size: 0.8vw;
+  font-weight: 600;
+  text-transform: uppercase;
+
+}
+
+.elem:hover img {
+  opacity: 1;
+  left: 35%;
+}
+
+.elem:hover {
+  background-color: rgba(128, 128, 128, 0.164);
+}
+
+#page4{
+  height: 100%;
+  width: 100%;
+  display:flex;
+}
+
+#part1 img{
+  
+  padding: 3vw 7vw;
+  
+}
+
+#part2 h4{
+  font-size: 4vw;
+  padding: 3vw 0;
+  letter-spacing: 0.1px;
+  font-weight: 800;
+  /* font-family:Georgia, 'Times New Roman', Times, serif; */
+}
+
+#part2 h5{
+  font-size: 2vw;
+  font-weight: 500;
+  letter-spacing: 0.1px;
+  
+}
+#photo{
+  display: flex;
+}
+#part2 p{
+  font-size: 1.5vw;
+  padding-top: 3vw ;
+  padding-bottom: 2vh;
+}
+
+#photo{
+  display: flex;
+  
+}
+#first img{
+  height: 380px;
+  width: 380px;
+  object-fit:cover;
+ 
+}
+
+#second img{
+  height: 380px;
+  width: 380px;
+  padding-left: 1vw;
+}
+
+#Only{
+  height: 100%;
+  width: 100%;
+
+}
+
+#Only img{
+  height:800px;
+  width: 100%;
+  padding: 3vw ;
+  /* object-fit: cover; */
+}
+
+#marque{
+  /* height: 20vh; */
+  width: 100% ;
+  /* background-color: blueviolet; */
+  padding: 0.9vw;
+  white-space: nowrap;
+  overflow-x: hidden;
+  overflow-y: hidden;
+  border-top: 2px solid black;
+  border-bottom: 2px solid black;
+}
+
+#marque h1{
+  display: inline-block;
+  font-size: 3vw;
+  text-transform: uppercase;
+  font-weight: 900;
+  -webkit-text-stroke: 2px black;
+  color: transparent;
+  font-family: monument;
+  letter-spacing: 3px;
+  margin-right: 16px;
+  /* 4px ki already exist krti hai toh total 20px ki jgha hai 2 ke bich mai */
+  animation-name: move;
+  animation-duration: 3s;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+  }
+
+@keyframes move {
+  from {
+    transform: translateX(0);
+  }
+  to{
+    transform: translateX(calc(-100% - 20px));
+  }
+}
+ #footer{
+  height: 10%;
+  width: 100%;
+} 
